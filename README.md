@@ -51,5 +51,104 @@ Join our community of developers creating universal apps.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
 =======
 # DiceRoll
-DiceRoll code
+
+# Dice Roller App
+
+A fun and interactive **React Native** app that simulates rolling a dice. Users can roll the dice by pressing a button, and the app will display the dice number along with an image of the rolled face.
+
+---
+
+## Features
+
+- 🎲 Roll a dice with the press of a button.
+- 🎨 Displays the rolled number and its corresponding dice face image.
+- ⚡ Responsive and visually engaging UI.
+
+
+
+## How to Run
+
+### Prerequisites
+
+- Node.js installed (v14+ recommended)
+- React Native environment set up ([Guide](https://reactnative.dev/docs/environment-setup))
+- A mobile emulator or a connected physical device
+
+---
+
+### Steps to Run
+
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd dice-roller-app
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the app:
+   - For iOS:
+     ```bash
+     npx react-native run-ios
+     ```
+   - For Android:
+     ```bash
+     npx react-native run-android
+     ```
+
+---
+
+## How It Works
+
+1. **Random Dice Roll**:  
+   When the "Roll Dice" button is clicked, a random number between 1 and 6 is generated.
+   
+2. **Dice Face Display**:  
+   The rolled number's corresponding dice image is displayed using `Image` components.
+
+3. **State Management**:  
+   - The app uses `useState` to track the rolled number.
+   - `useMemo` caches the dice images for performance.
+   - `useCallback` ensures the `rollDice` function is optimized.
+
+---
+
+## File Structure
+
+```
+.
+├── App.js                 # Main React Native app component
+├── assets
+│   └── images             # Folder containing dice face images
+├── node_modules           # Dependencies
+├── package.json           # Project configuration
+└── README.md              # Project documentation
+```
+
+---
+
+## Technologies Used
+
+- **React Native** for building the app
+- **JavaScript/TypeScript** for logic and interactivity
+- **useState, useMemo, useCallback** for state and performance optimization
+
+---
+
+## Future Enhancements
+
+- Add support for multiple dice rolls.
+- Include sound effects on dice roll.
+- Improve UI with animations and better styling.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
